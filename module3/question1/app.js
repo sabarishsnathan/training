@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const employeeRouter=require("./Employee/router/employeeRouter")
 const projectRouter=require("./Project/router/projectRouter")
+const networkRouter=require("./Network/router/networkRouter")
 const app = express();
 
 
@@ -20,6 +21,7 @@ app.get('/', (req,res) => {
 
 app.use("/employee/",employeeRouter);
 app.use("/project/",projectRouter);
+app.use("/getEmployeeDetails/",networkRouter);
 app.listen(port,function(err){
     if(err) throw err;
     console.log('server is running on port ' + port)
