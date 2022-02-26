@@ -1,0 +1,12 @@
+[
+    {
+      "productId": 1,
+      "productName": "Test1",
+      "price": 19.95
+    },
+    {
+      "productId": 2,
+      "productName": "Garden Cart",
+      "price": 32.99
+    }
+  ]
