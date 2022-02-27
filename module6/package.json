@@ -1,0 +1,18 @@
+{
+  "name": "module6",
+  "version": "1.0.0",
+  "description": "module6 bug app",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sabarish",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mongodb": "^4.4.0"
+  }
+}
