@@ -2,8 +2,8 @@ version: '3'
 services:
 
     admin:
-        container_name: news-admin
-        image: sabaedu/news-admin-app
+        container_name: newsadmin
+        image: sabaedu0708/newsadmin
         restart: always
         ports:
           - "4400:4400"
@@ -11,8 +11,8 @@ services:
           - chayakada
 
     cust:
-        container_name: news-cust
-        image: sabaedu/news-cust-app
+        container_name: newscust
+        image: sabaedu0708/newscust
         restart: always
         ports:
           - "4401:4401"
@@ -28,5 +28,5 @@ services:
           - chayakada
 
 networks:
-  medianet:
+  chayakada:
     driver: bridge

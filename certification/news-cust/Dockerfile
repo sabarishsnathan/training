@@ -19,7 +19,7 @@ RUN npm install
 COPY . .
 
 # PORT definded in app.js 
-EXPOSE 9901
+EXPOSE 4401
 
 # node app.js
 CMD [ "npm", "start" ]
