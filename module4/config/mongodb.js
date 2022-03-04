@@ -1,7 +1,7 @@
 const mongoDbCllient = require("mongodb").MongoClient;
 
 // Step 2: Get Connection string
-const url = "mongodb+srv://sabarishsnathan:Saba123@cluster0.x39tc.mongodb.net/cinemaapp?retryWrites=true&w=majority";
+const url = "";
 
 
 // Step 3: Connect to Mongodb Database server.

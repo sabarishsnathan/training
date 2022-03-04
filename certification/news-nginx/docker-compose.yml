@@ -1,0 +1,32 @@
+version: '3'
+services:
+
+    admin:
+        container_name: news-admin
+        image: sabaedu/news-admin-app
+        restart: always
+        ports:
+          - "4400:4400"
+        networks:
+          - chayakada
+
+    cust:
+        container_name: news-cust
+        image: sabaedu/news-cust-app
+        restart: always
+        ports:
+          - "4401:4401"
+        networks:
+          - chayakada
+
+    reverseproxy:
+        container_name: news-nginx
+        image: sabaedu/news-nginx
+        ports:
+          - "80:8080"
+        networks:
+          - chayakada
+
+networks:
+  medianet:
+    driver: bridge
